@@ -1,4 +1,5 @@
 import {useState} from "react";
+import './index.css';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
 
     return (
         <div className="App">
+            <div className="foo">This is Hyperplasma!!!!</div>
             <button onClick={(e) => clickHandler("Akira", e)}>Click Me!!!!!!!!!!!!!!!</button>
             <p>Count: {count | 0}</p>
             {count % 2 !== 0 ? <p>Odd!!!</p> : <p>Even!!!</p>}
